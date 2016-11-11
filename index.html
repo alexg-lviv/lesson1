@@ -1,21 +1,31 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<DOCTYPE html>
 
 <html>
 
 <head>
-    <title>My First HTML Page</title>
+    <title>calculator</title>
 </head>
 
 <body>
-	HALLO WORLD</BR>HALLO WORLD
 
-  
-     <H1> My text goes here.</H1> 
-     <H2> My text goes here.</H2>
-     <H3> My text goes here.</H3>
-	 <H6> My text goes here.</H6>
+	<p id="demo">0</p>
+	<button onclick="myFunctionPlus()">+1</button>  </br> </br>
+	<button onclick="myFunctionMinus()">-1</button>
+	 
 	<script>
-		alert("Hello username")
+		var value1 = 0;
+		
+		function myFunctionPlus()
+		{
+		value1=value1+1
+		document.getElementById("demo").innerHTML = value1;
+		}
+		
+		function myFunctionMinus()
+		{
+		value1=value1-1
+		document.getElementById("demo").innerHTML = value1;
+		}
 	</script>
 </body>
 
