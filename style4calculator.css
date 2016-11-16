@@ -1,0 +1,12 @@
+button
+{
+	color: red;
+	background-color: green;
+	border:2px solid pink;
+	border-radius:10px;
+	box-shadow:3px 3px 3px black;
+	height:30px;
+	width:30px;
+	text-align:center;
+	
+}

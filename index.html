@@ -1,157 +1,194 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
 <head>
     <title>calculator</title>
+	<link href="style4calculator.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
 
 	<p id="demo">0</p>
-	<p id="demo2"> </p>
+	<p id="demo2">0</p>
 	<p id="demo1">0</p>
 	<p id="demo3">0</p>
-	<button onclick="myFunctionPlus()">+</button>  </br> </br>
-	<button onclick="myFunctionMinus()">-</button> </br> </br>
-	<button onclick="myFunctionRez()">=</button> </br>
+	
+	
+	
 	<button onclick="myFunction1()">1</button>
 	<button onclick="myFunction2()">2</button>
 	<button onclick="myFunction3()">3</button>
+	<button onclick="myFunctionPlus()">+</button> </br>
 	<button onclick="myFunction4()">4</button>
 	<button onclick="myFunction5()">5</button>
 	<button onclick="myFunction6()">6</button>
+	<button onclick="myFunctionMinus()">-</button> </br>
 	<button onclick="myFunction7()">7</button>
 	<button onclick="myFunction8()">8</button>
 	<button onclick="myFunction9()">9</button>
-	</br></br></br></br>
-	<button onclick="myFunction11()">1</button>
-	<button onclick="myFunction12()">2</button>
-	<button onclick="myFunction13()">3</button>
-	<button onclick="myFunction14()">4</button>
-	<button onclick="myFunction15()">5</button>
-	<button onclick="myFunction16()">6</button>
-	<button onclick="myFunction17()">7</button>
-	<button onclick="myFunction18()">8</button>
-	<button onclick="myFunction19()">9</button>
+	<button onclick="myFunctionRez()">=</button>   </br>
+	<button onclick="myFunctionMn()">*</button>
+	<button onclick="myFunctionDl()">/</button> 	
+	
 	 
 	<script>
-		var value1 = 0, value2 = 0,value3=0;
+		var value1 = "", value2 ="",value3=0;
 		
 		function myFunctionPlus()
-		{
-		document.getElementById("demo2").innerHTML ="+";
-		}
-		function myFunctionRez()
-		{
-		if (demo2.innerHTML=="-")
-		{
-			value3=value1-value2;
-		}
-		else
-		{
-			value3=value1+value2;
-		}
+			{
+				document.getElementById("demo2").innerHTML ="+";
+			}
+		function myFunctionRez(){
+			if (demo2.innerHTML=="-")
+			{
+				value3=value1-value2;
+			}
+			if (demo2.innerHTML=="+")
+			{
+				value3=value1+value2;
+			}
+			if (demo2.innerHTML=="*")
+			{
+				value3=value1*value2;
+			}
+			if (demo2.innerHTML=="/")
+			{
+				value3=value1/value2;
+			}
 		document.getElementById("demo3").innerHTML =value3;
 		}
 		function myFunctionMinus()
-		{
-		document.getElementById("demo2").innerHTML ="-";
-		}
+			{
+				document.getElementById("demo2").innerHTML ="-";
+			}
+		function myFunctionMn()
+			{
+				document.getElementById("demo2").innerHTML ="*";
+			}
+		function myFunctionDl()
+			{
+				document.getElementById("demo2").innerHTML ="/";
+			}
 		function myFunction1()
 		{
-		value1=1
-		document.getElementById("demo").innerHTML = value1;
-		}
-		function myFunction2()
-		{
-		value1=2
-		document.getElementById("demo").innerHTML = value1;
-		}
-		function myFunction3()
-		{
-		value1=3
-		document.getElementById("demo").innerHTML = value1;
-		}
-		function myFunction4()
-		{
-		value1=4
-		document.getElementById("demo").innerHTML = value1;
-		}
-		function myFunction5()
-		{
-		value1=5
-		document.getElementById("demo").innerHTML = value1;
-		}
-		function myFunction6()
-		{
-		value1=6
-		document.getElementById("demo").innerHTML = value1;
-		}
-		function myFunction7()
-		{
-		value1=7
-		document.getElementById("demo").innerHTML = value1;
-		}
-		function myFunction8()
-		{
-		value1=8
-		document.getElementById("demo").innerHTML = value1;
-		}
-		function myFunction9()
-		{
-		value1=9
-		document.getElementById("demo").innerHTML = value1;
-		}
-		
-		
-		
-		
-		function myFunction111()
-		{
-		value2=1
-		document.getElementById("demo1").innerHTML = value2;
-		}
-		function myFunction12()
-		{
-		value2=2
-		document.getElementById("demo1").innerHTML = value2;
-		}
-		function myFunction13()
-		{
-		value2=3
-		document.getElementById("demo1").innerHTML = value2;
-		}
-		function myFunction14()
-		{
-		value2=4
-		document.getElementById("demo1").innerHTML = value2;
-		}
-		function myFunction15()
-		{
-		value2=5
-		document.getElementById("demo1").innerHTML = value2;
-		}
-		function myFunction16()
-		{
-		value2=6
-		document.getElementById("demo1").innerHTML = value2;
-		}
-		function myFunction17()
-		{
-		value2=7
-		document.getElementById("demo1").innerHTML = value2;
-		}
-		function myFunction18()
-		{
-		value2=8
-		document.getElementById("demo1").innerHTML = value2;
-		}
-		function myFunction19()
-		{
-		value2=9
-		document.getElementById("demo1").innerHTML = value2;
-		}
+			if (demo2.innerHTML=="0")
+			{
+				value1=value1 + "1"
+				value1=parseInt(value1, 10);
+				document.getElementById("demo").innerHTML = value1;
+			}
+			else
+			{
+				value2=value2 + "1"
+				value2=parseInt(value2, 10);
+				document.getElementById("demo1").innerHTML = value2;
+			}
+			}
+		function myFunction2(){
+			if (demo2.innerHTML=="0")
+			{
+				value1=value1 + "2"
+				value1=parseInt(value1, 10);
+				document.getElementById("demo").innerHTML = value1;
+			}
+			else
+			{
+				value2=value2 + "2"
+				value2=parseInt(value2, 10);
+				document.getElementById("demo1").innerHTML = value2;
+			}}
+		function myFunction3(){
+			if (demo2.innerHTML=="0")
+			{
+				value1=value1 + "3"
+				value1=parseInt(value1, 10);
+				document.getElementById("demo").innerHTML = value1;
+			}
+			else
+			{
+				value2=value2 + "3"
+				value2=parseInt(value2, 10);
+				document.getElementById("demo1").innerHTML = value2;
+			}}
+		function myFunction4(){
+			if (demo2.innerHTML=="0")
+			{
+				value1=value1 + "4"
+				value1=parseInt(value1, 10);
+				document.getElementById("demo").innerHTML = value1;
+			}
+			else
+			{
+				value2=value2 + "4"
+				value2=parseInt(value2, 10);
+				document.getElementById("demo1").innerHTML = value2;
+			}}
+		function myFunction5(){
+			if (demo2.innerHTML=="0")
+			{
+				value1=value1 + "5"
+				value1=parseInt(value1, 10);
+				document.getElementById("demo").innerHTML = value1;
+			}
+			else
+			{
+				value2=value2 + "5"
+				value2=parseInt(value2, 10);
+				document.getElementById("demo1").innerHTML = value2;
+			}}
+		function myFunction6(){
+			if (demo2.innerHTML=="0")
+			{
+				value1=value1 + "6"
+				value1=parseInt(value1, 10);
+				document.getElementById("demo").innerHTML = value1;
+			}
+			else
+			{
+				value2=value2 + "6"
+				value2=parseInt(value2, 10);
+				document.getElementById("demo1").innerHTML = value2;
+			}}
+		function myFunction7(){
+			if (demo2.innerHTML=="0")
+			{
+				value1=value1 + "7"
+				value1=parseInt(value1, 10);
+				document.getElementById("demo").innerHTML = value1;
+			}
+			else
+			{
+				value2=value2 + "7"
+				value2=parseInt(value2, 10);
+				document.getElementById("demo1").innerHTML = value2;
+			}}
+		function myFunction8(){
+			if (demo2.innerHTML=="0")
+			{
+				value1=value1 + "8"
+				value1=parseInt(value1, 10);
+				document.getElementById("demo").innerHTML = value1;
+			}
+			else
+			{
+				value2=value2 + "8"
+				value2=parseInt(value2, 10);
+				document.getElementById("demo1").innerHTML = value2;
+			}}
+		function myFunction9(){
+			if (demo2.innerHTML=="0")
+			{
+				value1=value1 + "9"
+				value1=parseInt(value1, 10);
+				document.getElementById("demo").innerHTML = value1;
+			}
+			else
+			{
+			value2=value2 + "9"
+			value2=parseInt(value2, 10);
+			document.getElementById("demo1").innerHTML = value2;
+			}}
 	</script>
 </body>
 
