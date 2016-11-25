@@ -1,9 +1,8 @@
 button
 {
 	color: red;
-	background-color: green;
-	border:2px solid pink;
-	border-radius:10px;
+	background-color: blue;
+	border:2px solid black;
 	box-shadow:3px 3px 3px black;
 	height:30px;
 	width:30px;
