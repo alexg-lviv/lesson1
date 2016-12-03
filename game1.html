@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <input id="a11" type="text"/>
+    <button onclick="MyFunction1()">ok</button>
+    <button onclick="MyFunction2()">find</button>
+    <script>
+            var secret=0, val1=0, val2=0,min=0,max=100;
+            function MyFunction1()
+            {
+              val1=document.getElementById("a11").value;
+              if (val1  < secret)
+              {
+                console.log(">");
+              }
+              else{
+              if (val1 > secret)
+              {
+                console.log("<");
+              }
+              else {
+
+               console.log("=");
+               secret=Math.random()*100;
+               secret=Math.floor(secret);
+             }}
+
+            }
+              function MyFunction2(){
+                  val2=Math.round(Math.random()*(max-min)+min);
+                if (val2  < secret)
+                {
+                  console.log(">");
+                  min=val2;
+                }
+                else{
+                if (val2 > secret)
+                {
+                  console.log("<");
+                  max=val2;
+                }
+                else {
+
+                 console.log("=");
+                 secret=Math.random()*100;
+                 secret=Math.floor(secret);
+                 min=0;
+                 max=100;
+               }}
+
+             }
+            secret=Math.random()*100;
+            secret=Math.floor(secret);
+    </script>
+  </body>
+
+</html>
