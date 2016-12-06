@@ -1,14 +1,56 @@
-#a
+div
 {
   height: 200px;
-  width: 25%;
-  background-color: red;
+  width: 200px;
+}
+
+.a1
+{
+  background-image:url("1.jpg");
   background-repeat: no-repeat;
 }
-#b
+.a2
 {
-  height: 200px;
-  width: 25%;
-  background-color: black;
+  background-image:url("11.jpg");
+  background-repeat: no-repeat;
+}
+.b1
+{
+  background-image:url("1.jpg");
+  background-repeat: no-repeat;
+}
+.b2
+{
+  background-image:url("11.jpg");
+  background-repeat: no-repeat;
+}
+.c1
+{
+  background-image:url("1.jpg");
+  background-repeat: no-repeat;
+}
+.c2
+{
+  background-image:url("11.jpg");
+  background-repeat: no-repeat;
+}
+.d1
+{
+  background-image:url("1.jpg");
+  background-repeat: no-repeat;
+}
+.d2
+{
+  background-image:url("11.jpg");
+  background-repeat: no-repeat;
+}
+.e1
+{
+  background-image:url("1.jpg");
+  background-repeat: no-repeat;
+}
+.e2
+{
+  background-image:url("11.jpg");
   background-repeat: no-repeat;
 }
